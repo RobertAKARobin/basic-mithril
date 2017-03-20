@@ -10,21 +10,6 @@ m._boundInput = function(stream, attrs){
 	return attrs;
 }
 
-var Header = (function(){
-	return {
-		view: function(){
-			return [
-				m('h1', [
-					m('a', {
-						href: '/',
-						oncreate: m.route.link
-					}, 'Home')
-				])
-			];
-		}
-	}
-})();
-
 var Main = (function(){
 	return {
 		view: function(){
